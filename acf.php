@@ -106,9 +106,8 @@ class acf {
 	*  @return	(string)
 	*/
     
-    function helpers_get_path( $file )
-    {
-        return trailingslashit(dirname($file));
+    function helpers_get_path( $file ) {
+        return plugin_dir_path( $file );
     }
     
     
@@ -125,38 +124,35 @@ class acf {
 	*  @return	(string)
 	*/
     
-    function helpers_get_dir( $file )
-    {
-        $dir = trailingslashit(dirname($file));
-        $count = 0;
+    function helpers_get_dir( $file ) {
+		
+		// vars
+		$path = plugin_dir_path( $file );
+		$path = wp_normalize_path( $path );
+		
+		
+		// check plugins
+		$check_path = wp_normalize_path( realpath(WP_PLUGIN_DIR) );
+		if( strpos($path, $check_path) === 0 ) {
+			return str_replace( $check_path, plugins_url(), $path );
+		}
+		
+		// check wp-content
+		$check_path = wp_normalize_path( realpath(WP_CONTENT_DIR) );
+		if( strpos($path, $check_path) === 0 ) {
+			return str_replace( $check_path, content_url(), $path );
+		}
+		
+		// check root
+		$check_path = wp_normalize_path( realpath(ABSPATH) );
+		if( strpos($path, $check_path) === 0 ) {
+			return str_replace( $check_path, site_url('/'), $path );
+		}
+		                
         
+        // return
+        return plugin_dir_url( $file );
         
-        // sanitize for Win32 installs
-        $dir = str_replace('\\' ,'/', $dir); 
-        
-        
-        // if file is in plugins folder
-        $wp_plugin_dir = str_replace('\\' ,'/', WP_PLUGIN_DIR); 
-        $dir = str_replace($wp_plugin_dir, plugins_url(), $dir, $count);
-        
-        
-        if( $count < 1 )
-        {
-	        // if file is in wp-content folder
-	        $wp_content_dir = str_replace('\\' ,'/', WP_CONTENT_DIR); 
-	        $dir = str_replace($wp_content_dir, content_url(), $dir, $count);
-        }
-        
-        
-        if( $count < 1 )
-        {
-	        // if file is in ??? folder
-	        $wp_dir = str_replace('\\' ,'/', ABSPATH); 
-	        $dir = str_replace($wp_dir, site_url('/'), $dir);
-        }
-        
-
-        return $dir;
     }
 	
 	
