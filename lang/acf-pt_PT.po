@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Advanced Custom Fields\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/advanced-custom-fields\n"
-"POT-Creation-Date: 2016-04-14 10:07+0100\n"
-"PO-Revision-Date: 2016-08-05 16:16+0100\n"
+"POT-Creation-Date: 2017-11-02 08:44+0000\n"
+"PO-Revision-Date: 2017-11-02 08:49+0000\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
@@ -23,102 +23,101 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: acf.php:509
-msgid "Field&nbsp;Groups"
-msgstr "Grupos&nbsp;de&nbsp;campos"
-
 #. Plugin Name of the plugin/theme
-#: acf.php:510 core/controllers/field_groups.php:213
+#: acf.php:51 acf.php:530 core/controllers/field_groups.php:213
 msgid "Advanced Custom Fields"
 msgstr "Advanced Custom Fields"
 
-#: acf.php:511
+#: acf.php:529
+msgid "Field&nbsp;Groups"
+msgstr "Grupos&nbsp;de&nbsp;campos"
+
+#: acf.php:531
 msgid "Add New"
 msgstr "Adicionar novo"
 
-#: acf.php:512
+#: acf.php:532
 msgid "Add New Field Group"
 msgstr "Adicionar novo grupo de campos"
 
-#: acf.php:513
+#: acf.php:533
 msgid "Edit Field Group"
 msgstr "Editar grupo de campos"
 
-#: acf.php:514
+#: acf.php:534
 msgid "New Field Group"
 msgstr "Novo grupo de campos"
 
-#: acf.php:515
+#: acf.php:535
 msgid "View Field Group"
 msgstr "Ver grupo de campos"
 
-#: acf.php:516
+#: acf.php:536
 msgid "Search Field Groups"
 msgstr "Pesquisar grupos de campos"
 
-#: acf.php:517
+#: acf.php:537
 msgid "No Field Groups found"
 msgstr "Nenhum grupo de campos encontrado"
 
-#: acf.php:518
+#: acf.php:538
 msgid "No Field Groups found in Trash"
-msgstr "Nenhum grupo de campos encontrado no Lixo"
+msgstr "Nenhum grupo de campos encontrado no lixo"
 
-#: acf.php:603 core/views/meta_box_options.php:99
+#: acf.php:623 core/views/meta_box_options.php:99
 msgid "Custom Fields"
 msgstr "Campos personalizados"
 
-#: acf.php:621 acf.php:624
+#: acf.php:641 acf.php:644
 msgid "Field group updated."
 msgstr "Grupo de campos actualizado."
 
-#: acf.php:622
+#: acf.php:642
 msgid "Custom field updated."
 msgstr "Campo personalizado actualizado."
 
-#: acf.php:623
+#: acf.php:643
 msgid "Custom field deleted."
 msgstr "Campo personalizado eliminado."
 
-#. translators: %s: date and time of the revision
-#: acf.php:626
+#: acf.php:646
 #, php-format
 msgid "Field group restored to revision from %s"
 msgstr "Grupo de campos restaurado para revisão de %s"
 
-#: acf.php:627
+#: acf.php:647
 msgid "Field group published."
 msgstr "Grupo de campos publicado."
 
-#: acf.php:628
+#: acf.php:648
 msgid "Field group saved."
 msgstr "Grupo de campos guardado."
 
-#: acf.php:629
+#: acf.php:649
 msgid "Field group submitted."
 msgstr "Grupo de campos enviado."
 
-#: acf.php:630
+#: acf.php:650
 msgid "Field group scheduled for."
 msgstr "Grupo de campos agendado."
 
-#: acf.php:631
+#: acf.php:651
 msgid "Field group draft updated."
 msgstr "Rascunho de grupo de campos actualizado."
 
-#: acf.php:766
+#: acf.php:786
 msgid "Thumbnail"
 msgstr "Miniatura"
 
-#: acf.php:767
+#: acf.php:787
 msgid "Medium"
 msgstr "Média"
 
-#: acf.php:768
+#: acf.php:788
 msgid "Large"
 msgstr "Grande"
 
-#: acf.php:769
+#: acf.php:789
 msgid "Full"
 msgstr "Completo"
 
@@ -454,7 +453,7 @@ msgstr "Mostrar campo chave"
 #: core/fields/page_link.php:159 core/fields/post_object.php:340
 #: core/fields/post_object.php:361 core/fields/select.php:224
 #: core/fields/select.php:243 core/fields/taxonomy.php:499
-#: core/fields/user.php:332 core/fields/wysiwyg.php:344
+#: core/fields/user.php:332 core/fields/wysiwyg.php:345
 #: core/views/meta_box_fields.php:195 core/views/meta_box_fields.php:218
 msgid "No"
 msgstr "Não"
@@ -463,7 +462,7 @@ msgstr "Não"
 #: core/fields/page_link.php:158 core/fields/post_object.php:339
 #: core/fields/post_object.php:360 core/fields/select.php:223
 #: core/fields/select.php:242 core/fields/taxonomy.php:498
-#: core/fields/user.php:331 core/fields/wysiwyg.php:343
+#: core/fields/user.php:331 core/fields/wysiwyg.php:344
 #: core/views/meta_box_fields.php:194 core/views/meta_box_fields.php:217
 msgid "Yes"
 msgstr "Sim"
@@ -552,7 +551,7 @@ msgstr "Recursos"
 
 #: core/controllers/field_groups.php:220
 msgid "Getting Started"
-msgstr "Primeiros passos"
+msgstr "Como começar"
 
 #: core/controllers/field_groups.php:221
 msgid "Field Types"
@@ -894,6 +893,10 @@ msgid "Moving user custom fields from wp_options to wp_usermeta"
 msgstr ""
 "A mover os campos personalizados do utilizador de wp_options para wp_usermeta"
 
+#: core/early-access.php:340
+msgid "(Early access enabled)"
+msgstr "(O acesso antecipado está activado)"
+
 #: core/fields/_base.php:124 core/views/meta_box_location.php:74
 msgid "Basic"
 msgstr "Básico"
@@ -935,7 +938,7 @@ msgstr "azul : Azul"
 #: core/fields/email.php:106 core/fields/number.php:116
 #: core/fields/radio.php:196 core/fields/select.php:197
 #: core/fields/text.php:116 core/fields/textarea.php:103
-#: core/fields/true_false.php:94 core/fields/wysiwyg.php:286
+#: core/fields/true_false.php:94 core/fields/wysiwyg.php:287
 msgid "Default Value"
 msgstr "Valor por omissão"
 
@@ -1032,7 +1035,7 @@ msgstr "Email"
 
 #: core/fields/email.php:107 core/fields/number.php:117
 #: core/fields/text.php:117 core/fields/textarea.php:104
-#: core/fields/wysiwyg.php:287
+#: core/fields/wysiwyg.php:288
 msgid "Appears when creating a new post"
 msgstr "Aparece quando é criado um novo conteúdo."
 
@@ -1364,7 +1367,7 @@ msgstr "Conteúdos"
 
 #: core/fields/relationship.php:568
 msgid "Post IDs"
-msgstr "IDs dos conteúdos"
+msgstr "ID dos conteúdos"
 
 #: core/fields/relationship.php:634
 msgid "Search"
@@ -1535,11 +1538,11 @@ msgstr "Filtrar por papel"
 msgid "Wysiwyg Editor"
 msgstr "Editor wysiwyg"
 
-#: core/fields/wysiwyg.php:301
+#: core/fields/wysiwyg.php:302
 msgid "Toolbar"
 msgstr "Barra de ferramentas"
 
-#: core/fields/wysiwyg.php:333
+#: core/fields/wysiwyg.php:334
 msgid "Show Media Upload Buttons?"
 msgstr "Mostrar botões de carregar multimédia?"
 
