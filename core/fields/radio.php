@@ -79,7 +79,7 @@ class acf_field_radio extends acf_field
 				
 				
 				// HTML
-				$e .= '<li><label><input id="' . esc_attr($field['id']) . '-' . esc_attr($key) . '" type="radio" name="' . esc_attr($field['name']) . '" value="' . esc_attr($key) . '" ' . esc_attr( $atts ) . ' />' . $value . '</label></li>';
+				$e .= '<li><label><input id="' . esc_attr($field['id']) . '-' . esc_attr($key) . '" type="radio" name="' . esc_attr($field['name']) . '" value="' . esc_attr($key) . '" ' . $atts . ' />' . $value . '</label></li>';
 			}
 		}
 		
