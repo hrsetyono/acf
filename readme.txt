@@ -3,7 +3,7 @@ Contributors: elliotcondon
 Tags: acf, advanced, custom, field, fields, form, repeater, content
 Requires at least: 3.6.0
 Tested up to: 4.9.9
-Stable tag: 4.4.11
+Stable tag: 4.4.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,10 +36,10 @@ To help provide the most seamless update possible, we have included a simple **E
 * [Website](https://www.advancedcustomfields.com)
 * [Documentation](https://www.advancedcustomfields.com/resources/)
 * [Support](https://support.advancedcustomfields.com)
-* [ACF PRO](https://www.advancedcustomfields.com/resources/pro/)
+* [ACF PRO](https://www.advancedcustomfields.com/pro/)
 
 = PRO =
-The Advanced Custom Fields plugin is also available in a professional version which includes more fields, more functionality, and more flexibility! [Learn more](https://www.advancedcustomfields.com/resources/pro/)
+The Advanced Custom Fields plugin is also available in a professional version which includes more fields, more functionality, and more flexibility! [Learn more](https://www.advancedcustomfields.com/pro/)
 
 
 == Installation ==
