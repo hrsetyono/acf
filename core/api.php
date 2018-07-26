@@ -256,12 +256,10 @@ function get_field_object( $field_key, $post_id = false, $options = array() ) {
 	
 	
 	// defaults for options
-	$defaults = array(
+	$options = wp_parse_args($options, array(
 		'load_value'	=>	true,
 		'format_value'	=>	true,
-	);
-	
-	$options = array_merge($defaults, $options);
+	));
 	
 	
 	// is $field_name a name? pre 3.4.0
