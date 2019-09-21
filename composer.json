@@ -1,16 +1,23 @@
 {
-	"name"       : "elliotcondon/acf",
-	"description": "Fully customise WordPress edit screens with powerful fields.",
-	"homepage"   : "http://www.advancedcustomfields.com/",
-	"type"       : "wordpress-plugin",
-	"license"    : "GPL-2.0+",
-	"authors"    : [
-		{
-			"name"    : "Elliot Condon",
-			"homepage": "http://www.elliotcondon.com/"
-		}
-	],
-	"require": {
-          "composer/installers": "~1.0"
+  "name": "pixelstudio/acf",
+  "description": "Easiest way to add Custom Field to WordPress.",
+  "keywords": ["wordpress", "plugin", "library"],
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/hrsetyono/acf/",
+  "authors": [
+    {
+      "name": "Pixel Studio",
+      "email": "info@pixelstudio.id",
+      "homepage": "https://pixelstudio.id"
+    },
+	{
+	  "name"    : "Elliot Condon",
+	  "homepage": "https://www.elliotcondon.com/"
+	}
+  ],
+  "license": "GPL-2.0+",
+  "require": {
+    "php": ">=7.0.0",
+    "composer/installers": "~1.0"
   }
 }
