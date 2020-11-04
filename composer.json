@@ -1,0 +1,23 @@
+{
+  "name": "pixelstudio/acf",
+  "description": "Easiest way to add Custom Field to WordPress.",
+  "keywords": ["wordpress", "plugin", "library"],
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/hrsetyono/acf/",
+  "authors": [
+    {
+      "name": "Pixel Studio",
+      "email": "info@pixelstudio.id",
+      "homepage": "https://pixelstudio.id"
+    },
+	{
+	  "name"    : "Elliot Condon",
+	  "homepage": "https://www.elliotcondon.com/"
+	}
+  ],
+  "license": "GPL-2.0+",
+  "require": {
+    "php": ">=7.0.0",
+    "composer/installers": "~1.0"
+  }
+}
